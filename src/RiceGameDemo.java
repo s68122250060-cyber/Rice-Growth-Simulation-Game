@@ -7,12 +7,16 @@ public class RiceGameDemo {
         RicePlant r1 = new RicePlant(1, "Jasmine Rice", GrowthStage.SEED);
         RicePlant r2 = new RicePlant(2, "Sticky Rice", GrowthStage.SPROUT);
         RicePlant r3 = new RicePlant(3, "Brown Rice", GrowthStage.VEGETATIVE);
+        RicePlant r4 = new RicePlant(4, "Basmati Rice", GrowthStage.HEADING);
+        RicePlant r5 = new RicePlant(5, "Arborio Rice", GrowthStage.HARVEST);
 
         // 3.2:
         // เรียก displayInfo() ของต้นข้าวแต่ละต้น
         r1.displayInfo();
         r2.displayInfo();
         r3.displayInfo();
+        r4.displayInfo();
+        r5.displayInfo();
 
         // 3.3:
         // แสดงจำนวนต้นข้าวทั้งหมดในนา
@@ -23,10 +27,15 @@ public class RiceGameDemo {
         r1.grow();
         r2.grow();
         r3.grow();
+        r4.grow();
+        r5.grow();
+
 
         System.out.println("After growing:");
         r1.displayInfo();
         r2.displayInfo();
         r3.displayInfo();
+        r4.displayInfo();
+        r5.displayInfo();
     }
 }
