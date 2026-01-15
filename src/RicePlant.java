@@ -1,6 +1,6 @@
 public class RicePlant {
 
-    //  2.1:
+    // 2.1:
     // ประกาศตัวแปร instance
     private int id;
     private String riceVariety;
@@ -10,9 +10,9 @@ public class RicePlant {
     // ประกาศ static variable
     // ใช้เก็บจำนวนต้นข้าวทั้งหมด
     private static int totalPlants = 0;
-    
+
     // 2.3:
-    // constructor(ตัวสร้าง) เพื่อกำหนดค่าเริ่มต้นให้กับตัวแปร instance
+    // constructor(ตัวสร้าง) กำหนดค่าเริ่มต้นให้กับตัวแปร instance
     public RicePlant(int id, String riceVariety, GrowthStage stage) {
         this.id = id;
         this.riceVariety = riceVariety;
@@ -54,8 +54,8 @@ public class RicePlant {
                 stage = GrowthStage.HARVEST;
                 break;
             case HARVEST:
-                // ระยะสุดท้าย ไม่เปลี่ยนแล้วหยุด
                 break;
+        // ระยะสุดท้าย ไม่เปลี่ยนแล้วหยุด
         }
     }
 }
