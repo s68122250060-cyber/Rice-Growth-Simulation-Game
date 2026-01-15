@@ -12,7 +12,7 @@ public class RicePlant {
     private static int totalPlants = 0;
 
     // 2.3:
-    // constructor
+    // constructor(ตัวสร้าง) เพื่อกำหนดค่าเริ่มต้นให้กับตัวแปร instance
     public RicePlant(int id, String riceVariety, GrowthStage stage) {
         this.id = id;
         this.riceVariety = riceVariety;
