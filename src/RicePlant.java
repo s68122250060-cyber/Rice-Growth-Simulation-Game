@@ -38,6 +38,8 @@ public class RicePlant {
     // 2.6 (Challenge – Optional):
     // เปลี่ยนระยะการเจริญเติบโตของต้นข้าว
     public void grow() {
+        // เปลี่ยนระยะการเจริญเติบโตไปยังระยะถัดไป
+        //switch(การควบคุม)
         switch (stage) {
             case SEED:
                 stage = GrowthStage.SPROUT;
