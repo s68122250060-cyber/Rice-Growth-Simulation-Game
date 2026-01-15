@@ -8,9 +8,9 @@ public class RicePlant {
 
     // 2.2:
     // ประกาศ static variable
-    // ใช้เก็บจำนวนต้นข้าวทั้งหมดในนา
+    // ใช้เก็บจำนวนต้นข้าวทั้งหมด
     private static int totalPlants = 0;
-
+    
     // 2.3:
     // constructor(ตัวสร้าง) เพื่อกำหนดค่าเริ่มต้นให้กับตัวแปร instance
     public RicePlant(int id, String riceVariety, GrowthStage stage) {
@@ -39,7 +39,7 @@ public class RicePlant {
     // เปลี่ยนระยะการเจริญเติบโตของต้นข้าว
     public void grow() {
         // เปลี่ยนระยะการเจริญเติบโตไปยังระยะถัดไป
-        //switch(การควบคุม)
+        // switch(การควบคุม)
         switch (stage) {
             case SEED:
                 stage = GrowthStage.SPROUT;
@@ -54,7 +54,7 @@ public class RicePlant {
                 stage = GrowthStage.HARVEST;
                 break;
             case HARVEST:
-                // ระยะสุดท้าย ไม่เปลี่ยนแล้ว
+                // ระยะสุดท้าย ไม่เปลี่ยนแล้วหยุด
                 break;
         }
     }
