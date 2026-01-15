@@ -23,7 +23,7 @@ public class RiceGameDemo {
         System.out.println("Total rice plants: " + RicePlant.getTotalPlants());
 
         // 3.4 (Challenge – Optional):
-        // เรียก method grow() และแสดงผลอีกครั้ง
+        // เรียก method grow() และแสดงผล
         r1.grow();
         r2.grow();
         r3.grow();
